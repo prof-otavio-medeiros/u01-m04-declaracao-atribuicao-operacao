@@ -35,7 +35,7 @@ function showValue(direction) {
         result === undefined ? "let value;" : `let value = ${value};`
       }</span></br>
 <span class="classResult" ${isResultHidden ? "hidden" : ""}>      
-  value        -> ${result}
+  value        -> ${typeof result === 'string' ? `"${result}"` : result }
   typeof value -> ${typeof result}
 </span>
   </code>
